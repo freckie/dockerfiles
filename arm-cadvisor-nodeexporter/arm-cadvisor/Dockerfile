@@ -1,4 +1,8 @@
-# idea from github.com/Budry/cadvisor-arm
+# cAdvisor for ARM.
+
+# Reference 
+# https://github.com/Budry/cadvisor-arm
+
 
 # Builder
 FROM arm32v7/golang as builder
