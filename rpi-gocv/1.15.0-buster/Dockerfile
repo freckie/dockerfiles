@@ -30,10 +30,12 @@ RUN apt install -y build-essential \
     libqtwebkit4 \
     libqt4-test
 
-RUN go get -u -d gocv.io/x/gocv v0.24.0
-
 RUN apt install -y sudo \
     gcc
+
+RUN go get -u -d gocv.io/x/gocv  && \
+    cd $GOPATH/src/gocv.io/x/gocv && \
+    git checkout v0.24.0
 
 RUN cd $GOPATH/src/gocv.io/x/gocv && \
     make install_raspi
