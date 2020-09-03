@@ -35,7 +35,7 @@ RUN apt install -y build-essential \
     libqtwebkit4 \
     libqt4-test
 
-RUN cd ~
+WORKDIR /root
 RUN wget -O opencv.zip https://github.com/opencv/opencv/archive/4.4.0.zip && \
     wget -O opencv_contrib.zip https://github.com/opencv/opencv_contrib/archive/4.4.0.zip
 
@@ -45,9 +45,10 @@ RUN unzip opencv.zip && \
     mv opencv_contrib-4.4.0 opencv_contrib
 
 RUN wget https://bootstrap.pypa.io/get-pip.py && python3 get-pip.py
-
 RUN pip3 install numpy
-RUN mkdir ~/opencv/build && cd ~/opencv/build
+
+RUN mkdir /root/opencv/build
+WORKDIR /root/opencv/build
 
 RUN cmake -D CMAKE_BUILD_TYPE=RELEASE \
     -D OPENCV_ENABLE_NONFREE=ON \
