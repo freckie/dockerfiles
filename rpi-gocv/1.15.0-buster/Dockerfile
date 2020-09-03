@@ -30,7 +30,7 @@ RUN apt install -y build-essential \
     libqtwebkit4 \
     libqt4-test
 
-RUN go get -u -d gocv.io/x/gocv
+RUN go get -u -d gocv.io/x/gocv v0.24.0
 
 RUN apt install -y sudo \
     gcc
