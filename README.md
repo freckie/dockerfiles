@@ -10,3 +10,6 @@ Dockerfile archive for my projects.
     - OpenCV for Raspberry Pi
 - [rpi-opencv-pytorch-python](https://github.com/freckie/dockerfiles/tree/master/rpi-opencv-pytorch-python)
     - OpenCV & PyTorch for Raspberry Pi
+
+## Notice
+Raspberry Pi : ARMv7
