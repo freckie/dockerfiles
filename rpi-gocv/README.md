@@ -5,4 +5,4 @@ Unofficial [GoCV](https://gocv.io/)(Go binding for the OpenCV 4) image for Raspb
 [https://hub.docker.com/repository/docker/freckie/rpi-gocv](https://hub.docker.com/repository/docker/freckie/rpi-gocv)
 
 ## Tags
-- `1.15.0-buster`
+- `1.15.0-buster`: Go 1.15.0
